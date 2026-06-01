@@ -361,12 +361,12 @@ const devices = [
   },
   {
     "name": "TECNO Spark 40",
-    "general": 184,
-    "reddot": 196,
-    "scope2x": 186,
-    "scope4x": 168,
-    "sniper": 124,
-    "freelook": 192
+    "general": 113,
+    "reddot": 129,
+    "scope2x": 136,
+    "scope4x": 90,
+    "sniper": 0,
+    "freelook": 90
   },
   {
     "name": "TECNO Spark 40 Pro",
