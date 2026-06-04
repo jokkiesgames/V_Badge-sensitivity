@@ -180,7 +180,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Galaxy S25 Ultra",
+    "name": "Samsung Galaxy S25 Ultra",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -189,7 +189,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S25+",
+    "name": "Samsung Galaxy S25+",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -198,7 +198,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S25",
+    "name": "Samsung Galaxy S25",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -207,7 +207,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S24 Ultra",
+    "name": "Samsung Galaxy S24 Ultra",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -216,7 +216,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S24+",
+    "name": "Samsung Galaxy S24+",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -225,7 +225,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S24",
+    "name": "Samsung Galaxy S24",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -234,7 +234,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S23 Ultra",
+    "name": "Samsung Galaxy S23 Ultra",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -243,7 +243,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S23+",
+    "name": "Samsung Galaxy S23+",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -252,7 +252,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S23",
+    "name": "Samsung Galaxy S23",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -261,7 +261,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy A56",
+    "name": "Samsung Galaxy A56",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -270,7 +270,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Galaxy A55",
+    "name": "Samsung Galaxy A55",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -279,7 +279,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Galaxy A54",
+    "name": "Samsung Galaxy A54",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -288,7 +288,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Galaxy A35",
+    "name": "Samsung Galaxy A35",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -297,7 +297,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Galaxy A34",
+    "name": "Samsung Galaxy A34",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -306,7 +306,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy A25",
+    "name": "Samsung Galaxy A25",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -315,7 +315,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy A24",
+    "name": "Samsung Galaxy A24",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -324,7 +324,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy A15",
+    "name": "Samsung Galaxy A15",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -333,7 +333,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy A14",
+    "name": "Samsung Galaxy A14",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -342,7 +342,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy Z Fold6",
+    "name": "Samsung Galaxy Z Fold6",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -351,7 +351,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Galaxy Z Flip6",
+    "name": "Samsung Galaxy Z Flip6",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -918,7 +918,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Pixel 9 Pro XL",
+    "name": "Google Pixel 9 Pro XL",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -927,7 +927,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Pixel 9 Pro",
+    "name": "Google Pixel 9 Pro",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -936,7 +936,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Pixel 9",
+    "name": "Google Pixel 9",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -945,7 +945,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Pixel 8 Pro",
+    "name": "Google Pixel 8 Pro",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -954,7 +954,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Pixel 8",
+    "name": "Google Pixel 8",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -963,7 +963,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Pixel 7 Pro",
+    "name": "Google Pixel 7 Pro",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -972,7 +972,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Pixel 7",
+    "name": "Google Pixel 7",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -1017,7 +1017,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Nord 4",
+    "name": "OnePlus Nord 4",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -1026,7 +1026,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Nord CE 4",
+    "name": "OnePlus Nord CE 4",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -1161,7 +1161,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 10",
+    "name": "TECNO Spark 10",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -1170,7 +1170,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Spark 10 Pro",
+    "name": "TECNO Spark 10 Pro",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -1179,7 +1179,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Spark 9",
+    "name": "TECNO Spark 9",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1188,7 +1188,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 8C",
+    "name": "TECNO Spark 8C",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1197,7 +1197,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark Go 2024",
+    "name": "TECNO Spark Go 2024",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1206,7 +1206,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark Go 2023",
+    "name": "TECNO Spark Go 2023",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1215,7 +1215,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 19",
+    "name": "TECNO Camon 19",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -1224,7 +1224,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Camon 19 Pro",
+    "name": "TECNO Camon 19 Pro",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -1233,7 +1233,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Camon 18",
+    "name": "TECNO Camon 18",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1242,7 +1242,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 17",
+    "name": "TECNO Camon 17",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1251,7 +1251,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Pova Neo",
+    "name": "TECNO Pova Neo",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1260,7 +1260,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Pova Neo 2",
+    "name": "TECNO Pova Neo 2",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1269,7 +1269,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Pova Neo 3",
+    "name": "TECNO Pova Neo 3",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -1278,7 +1278,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Phantom X",
+    "name": "TECNO Phantom X",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -1287,7 +1287,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Phantom X2",
+    "name": "TECNO Phantom X2",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -1296,7 +1296,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Phantom X2 Pro",
+    "name": "TECNO Phantom X2 Pro",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -1305,7 +1305,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Pop 8",
+    "name": "TECNO Pop 8",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1314,7 +1314,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Pop 7",
+    "name": "TECNO Pop 7",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1323,7 +1323,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Pop 6",
+    "name": "TECNO Pop 6",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1584,7 +1584,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "M55",
+    "name": "Samsung Galaxy M55",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -1593,7 +1593,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "M54",
+    "name": "Samsung Galaxy M54",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -1602,7 +1602,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "M34",
+    "name": "Samsung Galaxy M34",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -1611,7 +1611,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "M14",
+    "name": "Samsung Galaxy M14",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1620,7 +1620,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "F54",
+    "name": "Samsung Galaxy F54",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -1656,7 +1656,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "XS Max",
+    "name": "Apple iPhone XS Max",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -1665,7 +1665,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "XS",
+    "name": "Apple iPhone XS",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -1674,7 +1674,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "XR",
+    "name": "Apple iPhone XR",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1683,7 +1683,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "X",
+    "name": "Apple iPhone X",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1692,7 +1692,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "8 Plus",
+    "name": "Apple iPhone 8 Plus",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1701,7 +1701,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "8",
+    "name": "Apple iPhone 8",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1710,7 +1710,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "7 Plus",
+    "name": "Apple iPhone 7 Plus",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1719,7 +1719,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "7",
+    "name": "Apple iPhone 7",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -1728,7 +1728,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "SE (2022)",
+    "name": "Apple iPhone SE (2022)",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -1737,7 +1737,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "SE (2020)",
+    "name": "Apple iPhone SE (2020)",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -1746,7 +1746,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "12 Mini",
+    "name": "Apple iPhone 12 Mini",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -1755,7 +1755,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "13 Mini",
+    "name": "Apple iPhone 13 Mini",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -1764,7 +1764,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "14 Pro",
+    "name": "Apple iPhone 14 Pro",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -1773,7 +1773,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "14 Pro Max",
+    "name": "Apple iPhone 14 Pro Max",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -1782,7 +1782,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "15 Pro",
+    "name": "Apple iPhone 15 Pro",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -1791,7 +1791,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "15 Pro Max",
+    "name": "Apple iPhone 15 Pro Max",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -2601,7 +2601,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy S20 Ultra",
+    "name": "Samsung Galaxy S20 Ultra",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -2610,7 +2610,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Galaxy S20+",
+    "name": "Samsung Galaxy S20+",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -2619,7 +2619,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Galaxy S10+",
+    "name": "Samsung Galaxy S10+",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -2628,7 +2628,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Galaxy A50",
+    "name": "Samsung Galaxy A50",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2637,7 +2637,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy M31",
+    "name": "Samsung Galaxy M31",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2646,7 +2646,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy J7 Pro",
+    "name": "Samsung Galaxy J7 Pro",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2655,7 +2655,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 7 Pro",
+    "name": "TECNO Spark 7 Pro",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2664,7 +2664,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 7",
+    "name": "TECNO Spark 7",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2673,7 +2673,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 6",
+    "name": "TECNO Spark 6",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2682,7 +2682,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 5",
+    "name": "TECNO Spark 5",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2691,7 +2691,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 4",
+    "name": "TECNO Spark 4",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2700,7 +2700,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 16 Premier",
+    "name": "TECNO Camon 16 Premier",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -2709,7 +2709,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Camon 16",
+    "name": "TECNO Camon 16",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2718,7 +2718,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 15",
+    "name": "TECNO Camon 15",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2727,7 +2727,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 12",
+    "name": "TECNO Camon 12",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2736,7 +2736,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon X Pro",
+    "name": "TECNO Camon X Pro",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -2745,7 +2745,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Phantom 9",
+    "name": "TECNO Phantom 9",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -2754,7 +2754,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Phantom 8",
+    "name": "TECNO Phantom 8",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -3798,7 +3798,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 8 Pro",
+    "name": "TECNO Spark 8 Pro",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -3807,7 +3807,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Spark 8",
+    "name": "TECNO Spark 8",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -3816,7 +3816,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 8C",
+    "name": "TECNO Spark 8C",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -3825,7 +3825,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 9T",
+    "name": "TECNO Spark 9T",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -3834,7 +3834,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Spark 9 Pro",
+    "name": "TECNO Spark 9 Pro",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -3843,7 +3843,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Spark 10C",
+    "name": "TECNO Spark 10C",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -3852,7 +3852,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Spark 10 5G",
+    "name": "TECNO Spark 10 5G",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -3861,7 +3861,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Spark 20C",
+    "name": "TECNO Spark 20C",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -3870,7 +3870,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Spark Go Plus",
+    "name": "TECNO Spark Go Plus",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -3879,7 +3879,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 11",
+    "name": "TECNO Camon 11",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -3888,7 +3888,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 11 Pro",
+    "name": "TECNO Camon 11 Pro",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -3897,7 +3897,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 15 Premier",
+    "name": "TECNO Camon 15 Premier",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -3906,7 +3906,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 17P",
+    "name": "TECNO Camon 17P",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -3915,7 +3915,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Camon 17 Pro",
+    "name": "TECNO Camon 17 Pro",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -3924,7 +3924,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Camon 18P",
+    "name": "TECNO Camon 18P",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -3933,7 +3933,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Camon 18 Premier",
+    "name": "TECNO Camon 18 Premier",
     "general": 180,
     "reddot": 192,
     "scope2x": 182,
@@ -3942,7 +3942,7 @@ const devices = [
     "freelook": 188
   },
   {
-    "name": "Camon 19 Neo",
+    "name": "TECNO Camon 19 Neo",
     "general": 176,
     "reddot": 188,
     "scope2x": 178,
@@ -3951,7 +3951,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Camon 19 Pro 5G",
+    "name": "TECNO Camon 19 Pro 5G",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -3960,7 +3960,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Camon 20 Pro 5G",
+    "name": "TECNO Camon 20 Pro 5G",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -3969,7 +3969,7 @@ const devices = [
     "freelook": 192
   },
   {
-    "name": "Camon 30 Premier",
+    "name": "TECNO Camon 30 Premier",
     "general": 188,
     "reddot": 200,
     "scope2x": 190,
@@ -4185,7 +4185,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Galaxy S20 Ultra",
+    "name": "Samsung Galaxy S20 Ultra",
     "general": 184,
     "reddot": 196,
     "scope2x": 186,
@@ -4500,7 +4500,7 @@ const devices = [
     "freelook": 184
   },
   {
-    "name": "Spark 3",
+    "name": "TECNO Spark 3",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4509,7 +4509,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark 2",
+    "name": "TECNO Spark 2",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4518,7 +4518,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark Go",
+    "name": "TECNO Spark Go",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4527,7 +4527,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon C8",
+    "name": "TECNO Camon C8",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4536,7 +4536,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon C9",
+    "name": "TECNO Camon C9",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4545,7 +4545,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon X",
+    "name": "TECNO Camon X",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4554,7 +4554,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Camon 12",
+    "name": "TECNO Camon 12",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4581,7 +4581,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Spark Youth",
+    "name": "TECNO Spark Youth",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4680,7 +4680,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy J2",
+    "name": "Samsung Galaxy J2",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4689,7 +4689,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy J5",
+    "name": "Samsung Galaxy J5",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4698,7 +4698,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy J7",
+    "name": "Samsung Galaxy J7",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4707,7 +4707,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy S6",
+    "name": "Samsung Galaxy S6",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4716,7 +4716,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy S7",
+    "name": "Samsung Galaxy S7",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4725,7 +4725,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy A01",
+    "name": "Samsung Galaxy A01",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4734,7 +4734,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy A10",
+    "name": "Samsung Galaxy A10",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
@@ -4743,7 +4743,7 @@ const devices = [
     "freelook": 180
   },
   {
-    "name": "Galaxy A20",
+    "name": "Samsung Galaxy A20",
     "general": 172,
     "reddot": 184,
     "scope2x": 174,
