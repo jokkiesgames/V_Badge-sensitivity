@@ -9,24 +9,6 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Tecno pop 10",
-    "general": 112,
-    "reddot": 96,
-    "scope2x": 140,
-    "scope4x": 123,
-    "sniper": 98,
-    "freelook": 130
-  },
-  {
-    "name": "Tecno pop 10c",
-    "general": 112,
-    "reddot": 96,
-    "scope2x": 156,
-    "scope4x": 130,
-    "sniper": 100,
-    "freelook": 130
-  },
-  {
     "name": "iPhone 16 Pro",
     "general": 188,
     "reddot": 200,
@@ -1321,6 +1303,24 @@ const devices = [
     "scope4x": 172,
     "sniper": 128,
     "freelook": 196
+  },
+  {
+    "name": "Tecno pop 10",
+    "general": 112,
+    "reddot": 96,
+    "scope2x": 140,
+    "scope4x": 123,
+    "sniper": 98,
+    "freelook": 130
+  },
+  {
+    "name": "Tecno pop 10c",
+    "general": 112,
+    "reddot": 96,
+    "scope2x": 156,
+    "scope4x": 130,
+    "sniper": 100,
+    "freelook": 130
   },
   {
     "name": "TECNO Pop 8",
