@@ -9,7 +9,7 @@ const devices = [
     "freelook": 196
   },
   {
-    "name": "Tecno pop10",
+    "name": "Tecno pop 10",
     "general": 112,
     "reddot": 96,
     "scope2x": 140,
@@ -18,7 +18,7 @@ const devices = [
     "freelook": 130
   },
   {
-    "name": "Tecno pop10c",
+    "name": "Tecno pop 10c",
     "general": 112,
     "reddot": 96,
     "scope2x": 156,
