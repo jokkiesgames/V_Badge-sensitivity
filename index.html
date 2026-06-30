@@ -1,0 +1,2238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CYBER CIPHER SENSITIVITY • JOKKIESGAMES</title>
+  <meta name="description" content="Professional Esports Sensitivity Generator — Neon Gaming Edition. Get pro Free Fire sensitivity settings and HUD recommendations by JOKKIESGAMES." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Orbitron:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ========================================
+       ADVANCED 2026 REDESIGN: CYBER CIPHER
+       Features: Raining Data Effect, Bento Grid,
+       Glassmorphism, Spatial UI, Micro-interactions,
+       Cyber Verification, Rotating Gun Scope
+       ======================================== */
+
+    :root {
+      --bg: #0a0e1a;
+      --bg-secondary: #0f1425;
+      --panel: rgba(15, 20, 37, 0.65);
+      --accent1: #06b6d4;
+      --accent2: #7c3aed;
+      --accent3: #ec4899;
+      --neon: #67e8f9;
+      --muted: #9aa8b3;
+      --glass-border: rgba(0, 255, 255, 0.14);
+      --glass-border-strong: rgba(6, 182, 212, 0.25);
+      --radius: 16px;
+      --radius-lg: 24px;
+      --max-width: 1200px;
+      --container-padding: 20px;
+      --transition: 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+      --transition-smooth: 300ms ease;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      background: linear-gradient(180deg, #020617 0%, #0a0e1a 40%, #031022 100%);
+      color: #e6f6fb;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+      overflow-y: auto;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* ========================================
+       RAINING DATA EFFECT (2026 TREND)
+       ======================================== */
+    .data-rain-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+      opacity: 0.15;
+    }
+
+    .rain-drop {
+      position: absolute;
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      color: var(--neon);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(103, 232, 249, 0.8);
+      animation: rainFall linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes rainFall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 0;
+      }
+      5% {
+        opacity: 0.6;
+      }
+      95% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* ========================================
+       CYBER VERIFICATION INTRO
+       ======================================== */
+    .cyber-intro {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(135deg, #0a0e1a 0%, #1a0f2e 50%, #0a0e1a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      opacity: 1;
+      pointer-events: auto;
+      transition: opacity 0.5s ease;
+    }
+
+    .cyber-intro.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .cyber-intro-content {
+      text-align: center;
+      max-width: 500px;
+      padding: 40px;
+      animation: slideInUp 0.8s ease;
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .cyber-intro-emoji {
+      font-size: 80px;
+      margin-bottom: 20px;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .cyber-intro-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 28px;
+      color: var(--neon);
+      margin: 20px 0;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .cyber-intro-text {
+      color: #cfeff6;
+      margin: 20px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .fingerprint-scanner {
+      width: 160px;
+      height: 160px;
+      margin: 40px auto;
+      border: 2px solid rgba(6, 182, 212, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 70%);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(6, 182, 212, 0.1);
+    }
+
+    .fingerprint-scanner::before {
+      content: '';
+      position: absolute;
+      inset: -10px;
+      border: 1px solid rgba(6, 182, 212, 0.2);
+      border-radius: 50%;
+      animation: rotate 10s linear infinite;
+    }
+
+    .fingerprint-scanner::after {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      border: 1px dashed rgba(6, 182, 212, 0.1);
+      border-radius: 50%;
+      animation: rotate 15s linear infinite reverse;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .fingerprint-scanner:hover {
+      border-color: var(--accent1);
+      box-shadow: 0 0 40px rgba(6, 182, 212, 0.4), inset 0 0 20px rgba(6, 182, 212, 0.2);
+      transform: scale(1.05);
+    }
+
+    .fingerprint-scanner.scanning {
+      animation: biometricPulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes biometricPulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(6, 182, 212, 0.3); border-color: rgba(6, 182, 212, 0.3); }
+      50% { box-shadow: 0 0 50px rgba(6, 182, 212, 0.6); border-color: var(--accent1); }
+    }
+
+    .fingerprint-svg {
+      width: 80px;
+      height: 80px;
+      fill: none;
+      stroke: var(--accent1);
+      stroke-width: 2;
+      stroke-linecap: round;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+      filter: drop-shadow(0 0 8px var(--accent1));
+    }
+
+    .fingerprint-scanner.scanning .fingerprint-svg {
+      stroke: var(--neon);
+      filter: drop-shadow(0 0 12px var(--neon));
+    }
+
+    .scan-line {
+      position: absolute;
+      left: 10%;
+      width: 80%;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--neon), transparent);
+      box-shadow: 0 0 15px var(--neon);
+      z-index: 10;
+      top: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .fingerprint-scanner.scanning .scan-line {
+      opacity: 1;
+      animation: scanMove 2s linear infinite;
+    }
+
+    @keyframes scanMove {
+      0% { top: 10%; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { top: 90%; opacity: 0; }
+    }
+
+    .biometric-data {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .data-point {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--accent1);
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .fingerprint-scanner.scanning .data-point {
+      animation: dataFlash 1s ease-in-out infinite;
+    }
+
+    @keyframes dataFlash {
+      0%, 100% { opacity: 0; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.5); }
+    }
+
+    .scanner-text {
+      margin-top: 20px;
+      color: var(--accent1);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .scanner-status {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 12px;
+      min-height: 20px;
+    }
+
+    /* ========================================
+       MAIN CONTENT WRAPPER
+       ======================================== */
+    .content-wrapper {
+      position: relative;
+      z-index: 2;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
+
+    .content-wrapper.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: var(--container-padding);
+    }
+
+    /* ========================================
+       PAGE LOADER
+       ======================================== */
+    .page-loader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--neon);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 18px;
+      z-index: 9999;
+      letter-spacing: 4px;
+      transition: opacity var(--transition-smooth);
+      flex-direction: column;
+      gap: 20px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .page-loader.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .loader-text {
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    .loader-bar {
+      width: 200px;
+      height: 3px;
+      background: rgba(103, 232, 249, 0.2);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .loader-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+      width: 30%;
+      animation: loadProgress 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    @keyframes loadProgress {
+      0% { width: 10%; }
+      50% { width: 70%; }
+      100% { width: 90%; }
+    }
+
+    /* ========================================
+       HEADER & NAVIGATION
+       ======================================== */
+    .site-header {
+      backdrop-filter: blur(10px);
+      background: rgba(10, 14, 26, 0.4);
+      border-bottom: 1px solid var(--glass-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: slideDown 0.6s ease;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .header-inner {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--neon);
+      font-weight: 800;
+      font-family: 'Orbitron', sans-serif;
+      transition: transform var(--transition);
+      cursor: pointer;
+    }
+
+    .brand:hover {
+      transform: scale(1.05);
+    }
+
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      font-weight: 800;
+      font-family: Orbitron;
+      color: #001;
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+      transition: all var(--transition);
+    }
+
+    .brand-mark:hover {
+      box-shadow: 0 0 30px rgba(6, 182, 212, 0.8);
+      transform: rotate(10deg);
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-nav a {
+      color: var(--neon);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      position: relative;
+      transition: all var(--transition);
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .main-nav a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      transition: left var(--transition);
+    }
+
+    .main-nav a:hover::before {
+      left: 0;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 12px;
+      padding: 10px 14px;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      color: inherit;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2), var(--accent3));
+      opacity: 0;
+      transition: opacity var(--transition);
+      z-index: -1;
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      color: #001;
+      font-weight: 700;
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+    }
+
+    .btn.primary:hover {
+      box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .btn.ghost {
+      background: transparent;
+      border: 1.5px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn.ghost:hover {
+      border-color: var(--accent1);
+      background: rgba(6, 182, 212, 0.1);
+    }
+
+    .mobile-only {
+      display: none;
+    }
+
+    /* ========================================
+       HERO SECTION (BENTO GRID STYLE)
+       ======================================== */
+    .hero {
+      padding: 60px 0 40px;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .hero-card {
+      padding: 40px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(15, 20, 37, 0.8), rgba(10, 15, 35, 0.5));
+      border: 1px solid var(--glass-border-strong);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 70%);
+      animation: float 20s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(20px, 20px); }
+    }
+
+    .hero-card > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(32px, 7vw, 52px);
+      margin: 0;
+      color: var(--neon);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      text-shadow: 0 0 20px rgba(103, 232, 249, 0.3);
+    }
+
+    .hero-sub {
+      color: var(--accent1);
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .lead {
+      color: #cfeff6;
+      margin-top: 16px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .cyber-card {
+      padding: 32px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(6, 182, 212, 0.1));
+      border: 2px solid var(--glass-border-strong);
+      backdrop-filter: blur(20px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: slideInRight 0.8s ease 0.3s both;
+      min-width: 240px;
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .cyber-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, transparent 30%, rgba(103, 232, 249, 0.1) 50%, transparent 70%);
+      animation: shimmer 3s infinite;
+    }
+
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    .cyber-card-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 24px;
+      margin: 0;
+      color: var(--neon);
+      font-weight: 800;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cyber-card-sub {
+      color: var(--accent1);
+      margin-top: 8px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ========================================
+       ROTATING GUN SCOPE ANIMATION
+       ======================================== */
+    .gun-scope-container {
+      width: 120px;
+      height: 120px;
+      margin: 20px auto 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .gun-scope {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      animation: rotateScopeOuter 4s linear infinite;
+    }
+
+    @keyframes rotateScopeOuter {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .gun-scope::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 3px solid var(--accent1);
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.6), inset 0 0 20px rgba(6, 182, 212, 0.2);
+    }
+
+    .gun-scope::after {
+      content: '';
+      position: absolute;
+      inset: 15%;
+      border: 2px solid var(--accent2);
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(124, 58, 237, 0.5);
+    }
+
+    .scope-crosshair {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: rotateScopeInner 3s linear infinite reverse;
+    }
+
+    @keyframes rotateScopeInner {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .crosshair-h, .crosshair-v {
+      position: absolute;
+      background: linear-gradient(90deg, transparent, var(--accent1), transparent);
+    }
+
+    .crosshair-h {
+      width: 50px;
+      height: 1px;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .crosshair-v {
+      width: 1px;
+      height: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+    }
+
+    .scope-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent1);
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(6, 182, 212, 0.8);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* ========================================
+       PAGE VIEWS (HOME, SENSI, AI HUD)
+       ======================================== */
+    .page-view {
+      display: none;
+    }
+
+    .page-view.active {
+      display: block;
+    }
+
+    /* ========================================
+       SECTION STYLES
+       ======================================== */
+    .section {
+      padding: 60px 0;
+      animation: fadeInUp 0.8s ease both;
+    }
+
+    .section-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(28px, 5vw, 40px);
+      margin: 0 0 12px;
+      color: var(--neon);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      margin-top: 8px;
+      font-size: 15px;
+    }
+
+    /* ========================================
+       SEARCH & CHIPS (BENTO STYLE)
+       ======================================== */
+    .search-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 24px;
+      margin-bottom: 20px;
+    }
+
+    .input {
+      flex: 1;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1.5px solid var(--glass-border);
+      color: var(--neon);
+      font-family: inherit;
+      font-size: 14px;
+      transition: all var(--transition);
+      backdrop-filter: blur(10px);
+    }
+
+    .input::placeholder {
+      color: rgba(103, 232, 249, 0.4);
+    }
+
+    .input:focus {
+      outline: none;
+      border-color: var(--accent1);
+      background: rgba(6, 182, 212, 0.1);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+    }
+
+    .chips {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1.5px solid rgba(103, 232, 249, 0.2);
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--neon);
+      transition: all var(--transition);
+      backdrop-filter: blur(10px);
+    }
+
+    .chip:hover {
+      background: rgba(6, 182, 212, 0.15);
+      border-color: var(--accent1);
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* ========================================
+       RESULTS GRID (BENTO LAYOUT)
+       ======================================== */
+    .results {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .device-item {
+      padding: 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      border: 1.5px solid rgba(255, 255, 255, 0.05);
+      cursor: pointer;
+      transition: all var(--transition);
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .device-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .device-item:hover {
+      border-color: var(--accent1);
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(124, 58, 237, 0.1));
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(6, 182, 212, 0.2);
+    }
+
+    .device-item > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ========================================
+       DEVICE RESULT CARD
+       ======================================== */
+    .device-result {
+      margin-top: 32px;
+      padding: 32px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(15, 20, 37, 0.8), rgba(10, 15, 35, 0.5));
+      border: 1.5px solid var(--glass-border-strong);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 0.6s ease;
+    }
+
+    .device-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .device-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 24px;
+      margin: 0;
+      color: var(--neon);
+      font-weight: 800;
+    }
+
+    .badge {
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      color: #001;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 12px;
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+    }
+
+    .device-meta dl {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .device-meta dt {
+      font-weight: 700;
+      color: var(--accent1);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .device-meta dd {
+      margin: 4px 0 0;
+      color: var(--neon);
+      font-weight: 600;
+    }
+
+    /* ========================================
+       SENSITIVITY BARS (ADVANCED STYLE)
+       ======================================== */
+    .compact-result-box {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 20px;
+      border: 1.5px solid var(--glass-border-strong);
+      backdrop-filter: blur(15px);
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .compact-result-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(circle at top right, rgba(6, 182, 212, 0.1), transparent 70%);
+      pointer-events: none;
+    }
+
+    .fire-compact-section {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      padding-right: 20px;
+    }
+
+    .fire-compact-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.3);
+      border: 2px solid var(--accent1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+      transition: all var(--transition);
+      overflow: hidden; /* Ensures image doesn't bleed out */
+    }
+
+    .fire-compact-image img {
+      width: 100%; /* Fill the container */
+      height: 100%;
+      object-fit: cover; /* Cover the entire circle */
+      border-radius: 50%; /* Ensure the image itself is rounded */
+    }
+
+    .fire-compact-label {
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+    }
+
+    .fire-compact-value {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--neon);
+    }
+
+    .sensi-compact-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 20px;
+    }
+
+    .ff-compact-row {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .ff-compact-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ff-compact-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .ff-compact-value {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent1);
+    }
+
+    .ff-compact-bar {
+      height: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .ff-compact-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      width: 0%;
+      transition: width 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* ========================================
+       FIRE BUTTON & STATS CARDS
+       ======================================== */
+    .result-controls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .fire-card, .strength-card, .headshot-card {
+      padding: 20px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(6, 182, 212, 0.05));
+      border: 1.5px solid var(--glass-border-strong);
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: all var(--transition);
+    }
+
+    .fire-card:hover, .strength-card:hover, .headshot-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(6, 182, 212, 0.2);
+    }
+
+    .fire-title, .strength-title, .headshot-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent1);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .fire-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 12px;
+      overflow: hidden;
+      border: 3px solid rgba(6, 182, 212, 0.3);
+      background: rgba(255, 255, 255, 0.02);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition);
+    }
+
+    .fire-image:hover {
+      border-color: var(--accent1);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+      transform: scale(1.05);
+    }
+
+    .fire-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fire-size {
+      font-weight: 700;
+      color: var(--neon);
+      font-size: 13px;
+    }
+
+    .strength-bar {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 12px 0;
+    }
+
+    .strength-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent1), var(--accent3));
+      width: 92%;
+      border-radius: 999px;
+    }
+
+    .strength-percent {
+      font-weight: 700;
+      color: var(--accent1);
+      font-size: 14px;
+    }
+
+    .headshot-score {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--accent1);
+      margin: 12px 0;
+      text-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+    }
+
+    .headshot-level {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ========================================
+       HUD FORM & MODAL
+       ======================================== */
+    .hud-form {
+      max-width: 720px;
+      margin-top: 20px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .form-row {
+      display: grid;
+      gap: 8px;
+    }
+
+    .form-row label {
+      font-weight: 600;
+      color: var(--neon);
+      font-size: 14px;
+    }
+
+    .form-row select {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1.5px solid var(--glass-border);
+      color: var(--neon);
+      font-family: inherit;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all var(--transition);
+      backdrop-filter: blur(10px);
+    }
+
+    .form-row select:focus {
+      outline: none;
+      border-color: var(--accent1);
+      background: rgba(6, 182, 212, 0.1);
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .hud-result {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(6, 182, 212, 0.05));
+      border: 1.5px solid var(--glass-border-strong);
+      animation: fadeInUp 0.6s ease;
+    }
+
+    .hud-result h3 {
+      margin-top: 0;
+      color: var(--neon);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .hud-result div {
+      color: #cfeff6;
+      line-height: 1.6;
+    }
+
+    /* ========================================
+       BACK BUTTON
+       ======================================== */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      color: var(--accent1);
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .back-btn:hover {
+      transform: translateX(-4px);
+      color: var(--neon);
+    }
+
+    /* ========================================
+       MODAL
+       ======================================== */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-smooth);
+    }
+
+    .modal[aria-hidden="false"] {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-content {
+      max-width: 900px;
+      width: 100%;
+      background: linear-gradient(135deg, rgba(15, 20, 37, 0.95), rgba(10, 15, 35, 0.85));
+      padding: 20px;
+      border-radius: var(--radius-lg);
+      border: 1.5px solid var(--glass-border-strong);
+      backdrop-filter: blur(20px);
+      position: relative;
+      animation: scaleIn 0.3s ease;
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 24px;
+      z-index: 10;
+    }
+
+    .skip-video-btn {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border-strong);
+      color: var(--neon);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skip-video-btn:hover {
+      background: var(--accent1);
+      color: #001;
+      transform: scale(1.05);
+    }
+
+    .modal video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      background: #000;
+    }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+    .site-footer {
+      padding: 32px 0;
+      color: var(--muted);
+      text-align: center;
+      border-top: 1px solid var(--glass-border);
+      margin-top: 60px;
+      font-size: 13px;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+
+    /* ========================================
+       MOBILE MENU
+       ======================================== */
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: linear-gradient(135deg, rgba(15, 20, 37, 0.95), rgba(10, 15, 35, 0.85));
+      border-bottom: 1px solid var(--glass-border);
+      backdrop-filter: blur(20px);
+      padding: 12px 0;
+      animation: slideDown 0.3s ease;
+    }
+
+    .mobile-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .mobile-menu li {
+      padding: 0;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 12px 20px;
+      color: var(--neon);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all var(--transition);
+      cursor: pointer;
+    }
+
+    .mobile-menu a:hover {
+      background: rgba(6, 182, 212, 0.1);
+      padding-left: 24px;
+    }
+
+    /* ========================================
+       RESPONSIVE DESIGN
+       ======================================== */
+    @media (max-width: 980px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .main-nav ul {
+        display: none;
+      }
+
+      .mobile-only {
+        display: inline-flex;
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+
+      .mobile-menu[hidden] {
+        display: none;
+      }
+
+      .device-meta dl {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .compact-result-box {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .fire-compact-section {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-right: 0;
+        padding-bottom: 15px;
+      }
+      .sensi-compact-list {
+        grid-template-columns: 1fr;
+      }
+      .result-controls {
+        grid-template-columns: 1fr;
+      }
+
+      .device-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-card {
+        padding: 24px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .device-meta dl {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+
+      .results {
+        grid-template-columns: 1fr;
+      }
+
+      .form-actions {
+        flex-direction: column;
+      }
+
+      .form-actions .btn {
+        width: 100%;
+      }
+
+      .data-rain-container {
+        opacity: 0.08;
+      }
+
+      .cyber-intro-content {
+        padding: 20px;
+      }
+
+      .cyber-intro-title {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- RAINING DATA BACKGROUND EFFECT -->
+  <div class="data-rain-container" aria-hidden="true" id="rainContainer"></div>
+
+  <!-- CYBER VERIFICATION INTRO -->
+  <div class="cyber-intro" id="cyberIntro">
+    <div class="cyber-intro-content">
+      <div class="cyber-intro-emoji">🕵️</div>
+      <h1 class="cyber-intro-title">VERIFY YOUR IDENTITY</h1>
+      <p class="cyber-intro-text">Are you an FF player? If so, put your thumb in the fingerprint scanner and we will verify.</p>
+      
+      <div class="fingerprint-scanner" id="fingerprintScanner">
+        <div class="scan-line"></div>
+        <div class="biometric-data">
+          <div class="data-point" style="top:20%; left:30%; animation-delay: 0.1s;"></div>
+          <div class="data-point" style="top:40%; left:70%; animation-delay: 0.3s;"></div>
+          <div class="data-point" style="top:70%; left:40%; animation-delay: 0.5s;"></div>
+          <div class="data-point" style="top:30%; left:60%; animation-delay: 0.2s;"></div>
+          <div class="data-point" style="top:60%; left:20%; animation-delay: 0.4s;"></div>
+        </div>
+        <svg class="fingerprint-svg" viewBox="0 0 24 24">
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          <path d="M9 12a3 3 0 0 1 6 0M7 12a5 5 0 0 1 10 0M5 12a7 7 0 0 1 14 0M12 12v.01"/>
+          <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z" opacity=".3"/>
+        </svg>
+      </div>
+      
+      <div class="scanner-text">TAP TO SCAN</div>
+      <div class="scanner-status" id="scannerStatus"></div>
+    </div>
+  </div>
+
+  <!-- VIDEO MODAL (plays after verification) -->
+  <div id="promoVideoModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close btn icon" aria-label="Close video">&times;</button>
+      <button id="skipVideoBtn" class="skip-video-btn" aria-label="Skip video">Skip Video ⏭️</button>
+      <video id="promoVideo" controls preload="metadata" playsinline>
+        <source src="pro-sensi.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+  </div>
+
+  <!-- PAGE LOADER -->
+  <div id="pageLoader" class="page-loader" aria-hidden="false">
+    <div class="loader-text">LOADING CYBER CIPHER</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <div class="content-wrapper" id="contentWrapper">
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#" id="brandLink" aria-label="JOKKIESGAMES Home">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">JOKKIESGAMES • V BADGE SENSI</span>
+        </a>
+
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="#" data-page="home">Home</a></li>
+            <li><a href="#" data-page="sensi">Sensitivity</a></li>
+            <li><a href="#" data-page="ai">AI HUD</a></li>
+            <li><a id="openVideo" href="#" aria-controls="promoVideoModal">Video</a></li>
+            <li><a class="channel" href="https://whatsapp.com/channel/0029VbAjUmNAO7RNr9SI7g2T" target="_blank" rel="noopener">CHANNEL</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeToggle" class="btn icon" aria-pressed="false" title="Toggle theme">Theme</button>
+          <button id="mobileMenuBtn" class="btn icon mobile-only" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu" hidden>
+        <ul>
+          <li><a href="#" data-page="home">Home</a></li>
+          <li><a href="#" data-page="sensi">Sensitivity</a></li>
+          <li><a href="#" data-page="ai">AI HUD</a></li>
+          <li><a id="openVideoMobile" href="#" aria-controls="promoVideoModal">Video</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <!-- HOME PAGE -->
+      <div id="homePage" class="page-view active">
+        <section id="home" class="hero">
+          <div class="container hero-grid">
+            <div class="hero-card">
+              <h1 class="hero-title">CYBER CIPHER SENSITIVITY</h1>
+              <p class="hero-sub">Professional Esports Sensitivity Generator • Neon Gaming Edition</p>
+              <p class="lead">Unlock powerful Free Fire sensitivity settings from JOKKIESGAMES — improve your aim, master headshots, and become unstoppable.</p>
+              <div class="hero-cta">
+                <button class="btn primary" id="startBtn">Get My Sensi</button>
+                <a class="btn ghost" href="https://whatsapp.com/channel/0029VbAjUmNAO7RNr9SI7g2T" target="_blank" rel="noopener">Join Channel</a>
+              </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+              <div class="cyber-card">
+                <h2 class="cyber-card-title">NEON GAMER</h2>
+                <p class="cyber-card-sub">Optimized HUD • Headshot Focused</p>
+                <div class="gun-scope-container">
+                  <div class="gun-scope">
+                    <div class="scope-crosshair">
+                      <div class="crosshair-h"></div>
+                      <div class="crosshair-v"></div>
+                      <div class="scope-dot"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- SENSITIVITY PAGE -->
+      <div id="sensiPage" class="page-view">
+        <section id="sensi" class="section section-sensi">
+          <div class="container">
+            <h2 class="section-title">Get Your Sensitivity</h2>
+            <p class="section-sub">Search your phone model.</p>
+
+            <div class="search-row">
+              <label for="deviceSearch" class="visually-hidden">Search device</label>
+              <input id="deviceSearch" class="input search" type="search" placeholder="Search your device (e.g., iPhone 16 Pro Max)" aria-label="Search your device" autocomplete="off">
+              <button id="clearSearch" class="btn icon" title="Clear search">Clear</button>
+            </div>
+
+            <div id="trendingChips" class="chips">
+              <button class="chip">Samsung S25 Ultra</button>
+              <button class="chip">iPhone 16 Pro Max</button>
+              <button class="chip">Redmi Note 14 Pro</button>
+              <button class="chip">Infinix GT 30 Pro</button>
+              <button class="chip">Tecno Camon 40</button>
+            </div>
+
+            <div id="results" class="results" role="list"></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- DEVICE DETAILS PAGE -->
+      <div id="detailsPage" class="page-view">
+        <section id="details" class="section section-details">
+          <div class="container">
+            <a class="back-btn" id="backToSearchBtn" href="#">← Back to Search</a>
+            
+            <article id="deviceResult" class="device-result" aria-live="polite">
+              <header class="device-header">
+                <h3 id="deviceName" class="device-name">Device Name</h3>
+                <span class="badge">👑 JOKKIESGAMES RECOMMENDED</span>
+              </header>
+
+              <div class="device-meta">
+                <dl>
+                  <div><dt>RAM</dt><dd id="deviceRam">8GB</dd></div>
+                  <div><dt>Refresh</dt><dd id="deviceRefresh">120Hz</dd></div>
+                  <div><dt>Chipset</dt><dd id="deviceChip">Snapdragon</dd></div>
+                  <div><dt>Best for</dt><dd id="deviceBest">Headshots & Drag Shots</dd></div>
+                </dl>
+              </div>
+
+              <div class="compact-result-box">
+                <div class="fire-compact-section">
+                  <div class="fire-compact-label">Fire Button</div>
+                  <div class="fire-compact-image" id="fireWrap">
+                    <img id="fireButtonImage" src="fire-50.png" alt="Fire button">
+                  </div>
+                  <div id="fireButtonSize" class="fire-compact-value">50%</div>
+                </div>
+
+                <div class="sensi-compact-list">
+                  <div class="ff-compact-row">
+                    <div class="ff-compact-header">
+                      <span class="ff-compact-label">General</span>
+                      <span class="ff-compact-value" id="general">-</span>
+                    </div>
+                    <div class="ff-compact-bar"><div id="generalBar" class="ff-compact-fill" style="width:0%"></div></div>
+                  </div>
+                  <div class="ff-compact-row">
+                    <div class="ff-compact-header">
+                      <span class="ff-compact-label">Red Dot</span>
+                      <span class="ff-compact-value" id="reddot">-</span>
+                    </div>
+                    <div class="ff-compact-bar"><div id="reddotBar" class="ff-compact-fill" style="width:0%"></div></div>
+                  </div>
+                  <div class="ff-compact-row">
+                    <div class="ff-compact-header">
+                      <span class="ff-compact-label">2X Scope</span>
+                      <span class="ff-compact-value" id="scope2x">-</span>
+                    </div>
+                    <div class="ff-compact-bar"><div id="scope2xBar" class="ff-compact-fill" style="width:0%"></div></div>
+                  </div>
+                  <div class="ff-compact-row">
+                    <div class="ff-compact-header">
+                      <span class="ff-compact-label">4X Scope</span>
+                      <span class="ff-compact-value" id="scope4x">-</span>
+                    </div>
+                    <div class="ff-compact-bar"><div id="scope4xBar" class="ff-compact-fill" style="width:0%"></div></div>
+                  </div>
+                  <div class="ff-compact-row">
+                    <div class="ff-compact-header">
+                      <span class="ff-compact-label">Sniper</span>
+                      <span class="ff-compact-value" id="sniper">-</span>
+                    </div>
+                    <div class="ff-compact-bar"><div id="sniperBar" class="ff-compact-fill" style="width:0%"></div></div>
+                  </div>
+                  <div class="ff-compact-row">
+                    <div class="ff-compact-header">
+                      <span class="ff-compact-label">Free Look</span>
+                      <span class="ff-compact-value" id="freelook">-</span>
+                    </div>
+                    <div class="ff-compact-bar"><div id="freelookBar" class="ff-compact-fill" style="width:0%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="result-controls">
+                <div class="strength-card">
+                  <div class="strength-title">Sensitivity Strength</div>
+                  <div class="strength-bar"><div class="strength-fill" style="width:92%"></div></div>
+                  <div class="strength-percent" id="strengthPercent">92%</div>
+                </div>
+
+                <div class="headshot-card">
+                  <div class="headshot-title">Best For Headshots</div>
+                  <div class="headshot-score" id="headshotScore">97%</div>
+                  <div class="headshot-level">Professional Accuracy</div>
+                </div>
+              </div>
+
+              <div class="bottom-actions" style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+                <button id="generateAI" class="btn primary">Generate AI HUD</button>
+                <a class="btn ghost" id="downloadPreset" href="#" download>Download Preset</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- AI HUD PAGE -->
+      <div id="aiPage" class="page-view">
+        <section id="ai" class="section section-ai">
+          <div class="container">
+            <a class="back-btn" id="backBtn" href="#">← Back to Home</a>
+            <h2 class="section-title">AI HUD Generator</h2>
+            <p class="section-sub">Customize your finger setup and get a tailored HUD recommendation.</p>
+
+            <form id="hudForm" class="hud-form" aria-label="AI HUD generator">
+              <div class="form-row"><label for="fingers">How many fingers do you use?</label>
+                <select id="fingers" name="fingers"><option>2 Fingers</option><option>3 Fingers</option><option>4 Fingers</option><option>5 Fingers</option></select>
+              </div>
+              <div class="form-row"><label for="strongFinger">Strongest Finger</label>
+                <select id="strongFinger" name="strongFinger"><option>Left Thumb</option><option>Right Thumb</option><option>Left Index</option><option>Right Index</option></select>
+              </div>
+              <div class="form-row"><label for="gloo">Preferred Gloo Wall Position</label>
+                <select id="gloo" name="gloo"><option>Left Side</option><option>Right Side</option><option>Top Left</option><option>Top Right</option></select>
+              </div>
+              <div class="form-row"><label for="style">Gameplay Style</label>
+                <select id="style" name="style"><option>Rusher</option><option>Sniper</option><option>Balanced</option><option>Support</option></select>
+              </div>
+
+              <div class="form-actions" style="display:flex;gap:10px;margin-top:8px">
+                <button type="submit" class="btn primary">Generate HUD</button>
+                <button type="reset" class="btn ghost">Reset</button>
+              </div>
+
+              <div id="hudResult" class="hud-result" hidden aria-live="polite"><h3>Your Recommended HUD</h3><div id="hudText"></div></div>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>© 2026 JOKKIESGAMES • V Badge Sensi</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Load device DB if present in same folder -->
+  <script src="V_Badge_device.js"></script>
+
+  <script>
+  // ========================================
+  // MAIN APPLICATION LOGIC
+  // ========================================
+  (function(){
+
+    // Sample devices (fallback)
+    const sampleDevices = [
+      { name: "Samsung S25 Ultra", ram:"12GB", refresh:"144Hz", chip:"Exynos/SD", best:"Headshots & Drag Shots", general:92, reddot:88, scope2x:85, scope4x:78, sniper:70, freelook:82 },
+      { name: "iPhone 16 Pro Max", ram:"12GB", refresh:"120Hz", chip:"A20 Bionic", best:"Precision Sniping", general:90, reddot:86, scope2x:89, scope4x:84, sniper:88, freelook:80 },
+      { name: "Redmi Note 14 Pro", ram:"8GB", refresh:"120Hz", chip:"Dimensity", best:"Balanced", general:78, reddot:72, scope2x:68, scope4x:62, sniper:58, freelook:70 }
+    ];
+
+    // Try to obtain devices from various possible globals
+    let devicesFromFile = null;
+    try {
+      if (window.devices && Array.isArray(window.devices)) devicesFromFile = window.devices;
+      else if (window.V_BADGE_DEVICES && Array.isArray(window.V_BADGE_DEVICES)) devicesFromFile = window.V_BADGE_DEVICES;
+      else if (typeof devices !== 'undefined' && Array.isArray(devices)) devicesFromFile = devices;
+    } catch(e){ devicesFromFile = null; }
+
+    const devicesList = Array.isArray(devicesFromFile) && devicesFromFile.length ? devicesFromFile : sampleDevices;
+    const usingExternalDB = devicesFromFile && devicesFromFile.length;
+
+    // Utility selectors
+    const $ = sel => document.querySelector(sel);
+    const $$ = sel => Array.from(document.querySelectorAll(sel));
+
+    // ========================================
+    // PAGE ROUTING SYSTEM
+    // ========================================
+    let currentPage = 'home';
+
+    function showPage(pageName) {
+      // Hide all pages
+      $$('.page-view').forEach(page => page.classList.remove('active'));
+      
+      // Show requested page
+      const pageEl = $(`#${pageName}Page`);
+      if (pageEl) {
+        pageEl.classList.add('active');
+        currentPage = pageName;
+        window.scrollTo(0, 0);
+      }
+    }
+
+    // ========================================
+    // CYBER VERIFICATION INTRO
+    // ========================================
+    function initCyberVerification() {
+      const cyberIntro = $('#cyberIntro');
+      const scanner = $('#fingerprintScanner');
+      const status = $('#scannerStatus');
+      const contentWrapper = $('#contentWrapper');
+      const promoModal = $('#promoVideoModal');
+      const promoVideo = $('#promoVideo');
+
+      scanner.addEventListener('click', () => {
+        scanner.classList.add('scanning');
+        status.textContent = 'SCANNING...';
+        
+        setTimeout(() => {
+          scanner.classList.remove('scanning');
+          status.textContent = 'VERIFIED ✓';
+          status.style.color = 'var(--accent1)';
+          
+          setTimeout(() => {
+            // Show video modal
+            promoModal.setAttribute('aria-hidden', 'false');
+            promoModal.style.display = 'flex';
+            try { promoVideo.play().catch(()=>{}); } catch(e) {}
+            
+            // Hide intro
+            cyberIntro.classList.add('hidden');
+            
+            // Show content after video ends or user closes it
+            const handleVideoEnd = () => {
+              contentWrapper.classList.add('visible');
+              promoModal.setAttribute('aria-hidden', 'true');
+              promoModal.style.display = 'none';
+              promoVideo.removeEventListener('ended', handleVideoEnd);
+            };
+            
+            promoVideo.addEventListener('ended', handleVideoEnd);
+            
+            // Also handle close and skip buttons
+            const closeBtn = promoModal.querySelector('.modal-close');
+            const skipBtn = $('#skipVideoBtn');
+
+            const handleCloseOrSkip = () => {
+              contentWrapper.classList.add('visible');
+              promoModal.setAttribute('aria-hidden', 'true');
+              promoModal.style.display = 'none';
+              promoVideo.pause();
+              promoVideo.currentTime = 0;
+              promoVideo.removeEventListener('ended', handleVideoEnd);
+            };
+
+            if (closeBtn) closeBtn.addEventListener('click', handleCloseOrSkip);
+            if (skipBtn) skipBtn.addEventListener('click', handleCloseOrSkip);
+            
+            // Handle modal background click
+            promoModal.addEventListener('click', (e) => {
+              if (e.target === promoModal) {
+                contentWrapper.classList.add('visible');
+                promoModal.setAttribute('aria-hidden', 'true');
+                promoModal.style.display = 'none';
+                promoVideo.pause();
+                promoVideo.currentTime = 0;
+                promoVideo.removeEventListener('ended', handleVideoEnd);
+              }
+            });
+          }, 1500);
+        }, 2000);
+      });
+    }
+
+    // ========================================
+    // RAINING DATA EFFECT GENERATOR
+    // ========================================
+    function initRainingData() {
+      const container = $('#rainContainer');
+      if (!container) return;
+
+      const characters = ['0', '1', '█', '▓', '░', '◆', '◇', '●', '◯', '✦', '✧', '⚡', '◈'];
+      const dropCount = Math.floor(window.innerWidth / 40);
+
+      function createRainDrop() {
+        const drop = document.createElement('div');
+        drop.className = 'rain-drop';
+        drop.textContent = characters[Math.floor(Math.random() * characters.length)];
+        drop.style.left = Math.random() * 100 + '%';
+        drop.style.top = '-20px';
+        drop.style.animationDuration = (Math.random() * 8 + 6) + 's';
+        drop.style.animationDelay = Math.random() * 2 + 's';
+        drop.style.fontSize = (Math.random() * 8 + 10) + 'px';
+        drop.style.opacity = Math.random() * 0.5 + 0.3;
+        container.appendChild(drop);
+
+        setTimeout(() => drop.remove(), 10000);
+      }
+
+      // Initial drops
+      for (let i = 0; i < dropCount; i++) {
+        setTimeout(() => createRainDrop(), Math.random() * 2000);
+      }
+
+      // Continuous generation
+      setInterval(() => {
+        if (container.children.length < dropCount) {
+          createRainDrop();
+        }
+      }, 300);
+    }
+
+    // ========================================
+    // PAGE INITIALIZATION
+    // ========================================
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize cyber verification
+      initCyberVerification();
+
+      // Initialize raining data effect
+      initRainingData();
+
+      // Page navigation
+      $$('[data-page]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const page = link.getAttribute('data-page');
+          showPage(page);
+          const mobileMenu = $('#mobileMenu');
+          const mobileBtn = $('#mobileMenuBtn');
+          if (mobileMenu) mobileMenu.hidden = true;
+          if (mobileBtn) mobileBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Brand link goes to home
+      $('#brandLink').addEventListener('click', (e) => {
+        e.preventDefault();
+        showPage('home');
+      });
+
+      // Back buttons
+      $('#backBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        showPage('home');
+      });
+
+      $('#backToSearchBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        showPage('sensi');
+      });
+
+      // Mobile menu
+      const mobileBtn = $('#mobileMenuBtn');
+      const mobileMenu = $('#mobileMenu');
+      if(mobileBtn){
+        mobileBtn.addEventListener('click', ()=>{
+          const expanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+          mobileBtn.setAttribute('aria-expanded', String(!expanded));
+          mobileMenu.hidden = expanded;
+        });
+      }
+
+      // Theme toggle
+      const themeToggle = $('#themeToggle');
+      if(themeToggle) {
+        themeToggle.addEventListener('click', ()=>{
+          const body = document.body;
+          const isDark = body.classList.toggle('theme-dark');
+          themeToggle.setAttribute('aria-pressed', String(isDark));
+        });
+      }
+
+      // Video modal
+      const promoModal = $('#promoVideoModal');
+      const openVideo = $('#openVideo');
+      const openVideoMobile = $('#openVideoMobile');
+      const closeModalBtn = promoModal ? promoModal.querySelector('.modal-close') : null;
+      const promoVideo = $('#promoVideo');
+
+      function openPromo(){
+        if(!promoModal) return;
+        promoModal.setAttribute('aria-hidden','false');
+        promoModal.style.display = 'flex';
+        try { promoVideo.play().catch(()=>{}); } catch(e) {}
+      }
+      function closePromo(){
+        if(!promoModal) return;
+        promoModal.setAttribute('aria-hidden','true');
+        try { promoVideo.pause(); promoVideo.currentTime = 0; } catch(e) {}
+        setTimeout(()=>{ promoModal.style.display = 'none'; }, 180);
+      }
+      if(openVideo) openVideo.addEventListener('click',(e)=>{ e.preventDefault(); openPromo(); });
+      if(openVideoMobile) openVideoMobile.addEventListener('click',(e)=>{ e.preventDefault(); openPromo(); });
+      if(closeModalBtn) closeModalBtn.addEventListener('click', closePromo);
+      if(promoModal) promoModal.addEventListener('click', (e)=>{ if(e.target === promoModal) closePromo(); });
+
+      // Search logic
+      const searchInput = $('#deviceSearch');
+      const results = $('#results');
+      const deviceResult = $('#deviceResult');
+
+      function renderDeviceItem(device){
+        const div = document.createElement('div');
+        div.className = 'device-item';
+        div.setAttribute('role','listitem');
+        div.tabIndex = 0;
+        div.innerHTML = `<strong>${escapeHtml(device.name)}</strong><div style="margin-top:6px;color:var(--muted);font-size:13px">${escapeHtml(device.ram || '')} • ${escapeHtml(device.refresh || '')}</div>`;
+        div.addEventListener('click', ()=> selectDevice(device));
+        div.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') selectDevice(device); });
+        return div;
+      }
+
+      function showResults(list){
+        results.innerHTML = '';
+        if(!list.length){
+          results.innerHTML = `<div class="device-item">No device found</div>`;
+          return;
+        }
+        list.slice(0,40).forEach(d => results.appendChild(renderDeviceItem(d)));
+      }
+
+      function selectDevice(device){
+        $('#deviceName').innerText = device.name;
+        $('#deviceRam').innerText = device.ram || '';
+        $('#deviceRefresh').innerText = device.refresh || '';
+        $('#deviceChip').innerText = device.chip || '';
+        $('#deviceBest').innerText = device.best || '';
+        $('#general').innerText = (device.general !== undefined ? device.general : '-') + '%';
+        $('#reddot').innerText = (device.reddot !== undefined ? device.reddot : '-') + '%';
+        $('#scope2x').innerText = (device.scope2x !== undefined ? device.scope2x : '-') + '%';
+        $('#scope4x').innerText = (device.scope4x !== undefined ? device.scope4x : '-') + '%';
+        $('#sniper').innerText = (device.sniper !== undefined ? device.sniper : '-') + '%';
+        $('#freelook').innerText = (device.freelook !== undefined ? device.freelook : '-') + '%';
+
+        // FIRE BUTTON: choose deterministic size from 50..40
+        const fireSizes = Array.from({length:11}, (_,i)=>50 - i);
+        let hash = 0;
+        for(let i=0;i<device.name.length;i++) hash = (hash * 31 + device.name.charCodeAt(i)) >>> 0;
+        const selectedSize = fireSizes[hash % fireSizes.length];
+
+        const imgPath = 'fire-' + selectedSize + '.png';
+        const fireImg = $('#fireButtonImage');
+        fireImg.src = imgPath;
+        $('#fireButtonSize').innerText = selectedSize + '%';
+
+        const fireWrap = $('#fireWrap');
+        if(selectedSize >= 48){ fireWrap.style.width = '90px'; fireWrap.style.height = '90px'; }
+        else if(selectedSize >= 45){ fireWrap.style.width = '80px'; fireWrap.style.height = '80px'; }
+        else { fireWrap.style.width = '70px'; fireWrap.style.height = '70px'; }
+
+        // Animate bars
+        setTimeout(()=>{
+          if(device.general !== undefined) $('#generalBar').style.width = device.general + '%';
+          if(device.reddot !== undefined) $('#reddotBar').style.width = device.reddot + '%';
+          if(device.scope2x !== undefined) $('#scope2xBar').style.width = device.scope2x + '%';
+          if(device.scope4x !== undefined) $('#scope4xBar').style.width = device.scope4x + '%';
+          if(device.sniper !== undefined) $('#sniperBar').style.width = device.sniper + '%';
+          if(device.freelook !== undefined) $('#freelookBar').style.width = device.freelook + '%';
+        }, 60);
+
+        const score = Math.round(((Number(device.general)||0) + (Number(device.reddot)||0)) / 2);
+        $('#headshotScore').innerText = score + '%';
+        $('#strengthPercent').innerText = Math.min(100, Math.round(((Number(device.general)||0) + (Number(device.reddot)||0) + (Number(device.scope2x)||0))/3)) + '%';
+
+        // Switch to details page instantly
+        showPage('details');
+      }
+
+      function runSearch(){
+        const q = (searchInput.value || '').trim().toLowerCase();
+        if(!q){ results.innerHTML = ''; return; }
+        const matches = devicesList.filter(d => (d.name||'').toLowerCase().includes(q));
+        showResults(matches);
+      }
+
+      if(searchInput){
+        searchInput.addEventListener('input', runSearch);
+        $('#clearSearch').addEventListener('click', ()=>{
+          searchInput.value = '';
+          runSearch();
+          searchInput.focus();
+        });
+      }
+
+      $$('#trendingChips .chip').forEach(chip=>{
+        chip.addEventListener('click', ()=>{ searchInput.value = chip.innerText; runSearch(); });
+      });
+
+      $('#startBtn').addEventListener('click', ()=>{ showPage('sensi'); });
+
+      // Generate AI HUD button - navigate to AI page
+      $('#generateAI').addEventListener('click', ()=>{ showPage('ai'); });
+
+      // HUD generator form
+      const hudForm = $('#hudForm');
+      if(hudForm){
+        hudForm.addEventListener('submit', (e)=>{
+          e.preventDefault();
+          const fingers = $('#fingers').value;
+          const strong = $('#strongFinger').value;
+          const gloo = $('#gloo').value;
+          const style = $('#style').value;
+          let recommendation = '';
+          switch(style){
+            case 'Rusher': recommendation = 'Large fire button, fast drag setup, close gloo wall position and enlarged movement controls.'; break;
+            case 'Sniper': recommendation = 'Smaller fire button, larger scope button and precision focused HUD.'; break;
+            case 'Balanced': recommendation = 'Balanced button placement for close and long range fights.'; break;
+            default: recommendation = 'Support layout with utility buttons positioned for quick access.'; break;
+          }
+          const hudText = `<strong>Finger Setup:</strong> ${escapeHtml(fingers)}<br><strong>Strong Finger:</strong> ${escapeHtml(strong)}<br><strong>Gloo Position:</strong> ${escapeHtml(gloo)}<br><strong>Play Style:</strong> ${escapeHtml(style)}<br><br><strong>AI Recommendation:</strong> ${escapeHtml(recommendation)}`;
+          $('#hudText').innerHTML = hudText;
+          $('#hudResult').hidden = false;
+          $('#hudResult').scrollIntoView({behavior:'smooth', block:'center'});
+        });
+      }
+
+      $('#downloadPreset').addEventListener('click', (e)=>{
+        e.preventDefault();
+        if($('#deviceResult').hidden) { alert('Select a device first to export its preset.'); return; }
+        const preset = {
+          device: $('#deviceName').innerText,
+          ram: $('#deviceRam').innerText,
+          refresh: $('#deviceRefresh').innerText,
+          chip: $('#deviceChip').innerText,
+          best: $('#deviceBest').innerText,
+          general: $('#general').innerText,
+          reddot: $('#reddot').innerText,
+          scope2x: $('#scope2x').innerText,
+          scope4x: $('#scope4x').innerText,
+          sniper: $('#sniper').innerText,
+          freelook: $('#freelook').innerText,
+          fireSize: $('#fireButtonSize').innerText + ' SIZE'
+        };
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(preset, null, 2));
+        this.href = dataStr;
+        this.download = ($('#deviceName').innerText || 'preset').replace(/\s+/g,'_') + '_sensi.json';
+      });
+
+      // Keyboard escape to close modal
+      window.addEventListener('keydown', (e)=>{
+        if(e.key === 'Escape'){
+          const modal = $('#promoVideoModal');
+          if(modal && modal.getAttribute('aria-hidden') === 'false'){
+            const closeBtn = modal.querySelector('.modal-close');
+            if(closeBtn) closeBtn.click();
+          }
+        }
+      });
+
+      // Initial results
+      showResults(devicesList);
+    });
+
+    // Helper: escape HTML
+    function escapeHtml(str){
+      if(typeof str !== 'string') return str;
+      return str.replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
+    }
+
+  })();
+  </script>
+</body>
+</html>
